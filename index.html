@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Product list with cart</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,35 +18,226 @@
   </style>
 </head>
 <body>
+  <section class="mainContainer">
+    <h1>Desserts</h1>
+    <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-waffle-mobile.jpg" alt="Waffle img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Waffle
+        </p>
+        <h3 class="itemComplete">
+          Waffle with Berries
+        </h3>
+        <p class="itemPrice">
+          $6.50
+        </p>
+      </div>
+    </div>
 
-  Desserts
+    <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-creme-brulee-mobile.jpg" alt="Crème img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Crème Brûlée
+        </p>
+        <h3 class="itemComplete">
+          Vanilla Bean Crème Brûlée
+        </h3>
+        <p class="itemPrice">
+          $7.00
+        </p>
+      </div>
+    </div>
 
-  Waffle with Berries
-  Waffle
-  6.50
+     <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-macaron-mobile.jpg" alt="Macaron img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Macaron
+        </p>
+        <h3 class="itemComplete">
+          Macaron Mix of Five
+        </h3>
+        <p class="itemPrice">
+          $8.00
+        </p>
+      </div>
+    </div>
+
+     <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-tiramisu-mobile.jpg" alt="Tiramisu img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Tiramisu
+        </p>
+        <h3 class="itemComplete">
+          Classic Tiramisu
+        </h3>
+        <p class="itemPrice">
+          $5.50
+        </p>
+      </div>
+    </div>
+
+     <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-baklava-mobile.jpg" alt="Baklava img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Baklava
+        </p>
+        <h3 class="itemComplete">
+          Pistachio Baklava
+        </h3>
+        <p class="itemPrice">
+          $4.00
+        </p>
+      </div>
+    </div>
+
+    <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-meringue-mobile.jpg" alt="Pie img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Pie
+        </p>
+        <h3 class="itemComplete">
+          Lemon Meringue Pie
+        </h3>
+        <p class="itemPrice">
+          $5.00
+        </p>
+      </div>
+    </div>
+
+    <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-cake-mobile.jpg" alt="Cake img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Cake
+        </p>
+        <h3 class="itemComplete">
+          Red Velvet Cake
+        </h3>
+        <p class="itemPrice">
+          $4.50
+        </p>
+      </div>
+    </div>
+
+    <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-brownie-mobile.jpg" alt="Brownie img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Brownie
+        </p>
+        <h3 class="itemComplete">
+          Salted Caramel Brownie
+        </h3>
+        <p class="itemPrice">
+          $5.50
+        </p>
+      </div>
+    </div>
+
+    <div class="dessertContainer">
+      <div class="dessertContent">
+        <img src="./assets/images/image-panna-cotta-mobile.jpg" alt="Panna Cotta img"/>
+      </div>
+      <div class="buttonContainer">
+        <button class="addToCartButton">
+          <img src="/assets/images/icon-add-to-cart.svg"/>
+          Add to Cart
+        </button>
+      </div>
+      <div class="itemContainer">
+        <p class="item">
+          Panna Cotta
+        </p>
+        <h3 class="itemComplete">
+          Vanilla Panna Cotta
+        </h3>
+        <p class="itemPrice">
+          $6.50
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- 
+
+  
+  
+  
+  
+  
+  
   Add to Cart
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
-
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
+  
   Pie
   5.00
   Add to Cart
@@ -63,12 +257,12 @@
   6.50
   Add to Cart
 
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+  Your Cart "Quantity"
+  Your added items will appear here -->
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
