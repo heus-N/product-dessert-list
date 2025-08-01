@@ -100,23 +100,30 @@ body{
     .item{
         color: var(--rose400);
         height: auto;
+        width: 100%;
     }
 
     .itemComplete{
         color: var(--rose900);
         height: auto;
         padding: 10px 0;
+        width: 100%;
     }
 
     .itemPrice{
         color: var(--red);
         font-weight: 600;
+        width: 100%;
     }
 
     footer{
-        height: 30px;
-        position: absolute;
-        bottom: 0;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        height: 45px;
+        padding: 0 50px;
+        position: relative;
+        bottom: 0px;
     }
 }
 
