@@ -1,152 +1,223 @@
-@media(min-width: 375px){
-    .mainContainer{
-        width: 100%;
-        padding: 1.5rem;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    h1{
-        font-size: 2rem;
-        color: var(--rose900);
-        height: auto;
-        width: auto;
-        margin-bottom: 2rem;
-    }
+.mainContainer{
+    width: 100%;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .dessertContainer{
-        position: relative;
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        margin-bottom: 1rem;
-        max-width: 400px;
-    }
+h1{
+    font-size: 2rem;
+    color: var(--rose900);
+    height: auto;
+    width: auto;
+    margin-bottom: 2rem;
+}
 
-    .dessertContent{
-        width: 100%;
-        height: 100%;
-    }
+.dessertMenu{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    .dessertContent img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-    }
-    .buttonContainer{
-        width: 100%;
-        height: 45px;
-    }
+.title{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+}
 
-    .addToCartButton{
-        font-size: 1rem;
-        position: absolute;
-        border: 1px solid var(--rose500);
-        width: 50%;
-        height: 45px;
-        z-index: 2;
-        left: 50%;
-        z-index: 3;
-        transform: translateX(-50%) translateY(-50%);
-        font-weight: 600;
-        border-radius: 100px;
-        max-width: 200px;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
+.dessertContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    max-width: 400px;
+}
 
-    .addToCartButton img{
-        width: 20px;
-        height: 20px;
-    }
+.dessertContent{
+    width: 100%;
+    height: 100%;
+}
 
-    .itemContainer{
-        width: 100%;
-        height: 100px;
-    }
+.dessertContent img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+.buttonContainer{
+    width: 100%;
+    height: 45px;
+}
 
-    .item{
-        color: var(--rose400);
-        height: auto;
-        width: 100%;
-    }
+.addToCartButton{
+    font-size: 1rem;
+    position: absolute;
+    border: 1px solid var(--rose500);
+    width: 50%;
+    height: 45px;
+    z-index: 2;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 600;
+    border-radius: 100px;
+    max-width: 200px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
-    .itemComplete{
-        color: var(--rose900);
-        height: auto;
-        padding: 10px 0;
-        width: 100%;
-    }
+.addToCartButton img{
+    width: 20px;
+    height: 20px;
+}
 
-    .itemPrice{
-        color: var(--red);
-        font-weight: 600;
-        width: 100%;
-    }
+.itemContainer{
+    width: 100%;
+    height: 100px;
+}
 
-    .cartContainer{
-        width: 100%;
-        border: 1px solid red;
-        height: 100%;
-    }
+.item{
+    color: var(--rose400);
+    height: auto;
+    width: 100%;
+}
 
-    .cart{
-        margin-top: 1rem;
-        background-color: #fff;
-        width: 100%;
-        height: 300px;
-        border-radius: 12px;
-        padding: 1.5rem;
-        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-    }
+.itemComplete{
+    color: var(--rose900);
+    height: auto;
+    padding: 10px 0;
+    width: 100%;
+}
 
-    .cart h2{
-        margin-bottom: 20px;
-        color: var(--red);
-        width: 100%;
-    }
+.itemPrice{
+    color: var(--red);
+    font-weight: 600;
+    width: 100%;
+}
 
-    .imgContainer{
-        width: 100%;
-        text-align: center;
-    }
+.cartContainer{
+    width: 400px;
+    height: 100%;
+}
 
-    .imgContainer p{
-        width: 100%;
-        font-weight: 600;
-        color: var(--rose500);
-    }
+.cart{
+    margin-top: 1rem;
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
 
-    .imgContainer img{
-        width: 150px;
-    }
+.cart h2{
+    margin-bottom: 20px;
+    color: var(--red);
+    width: 100%;
+}
+
+.imgContainer{
+    width: 100%;
+    text-align: center;
+}
+
+.imgContainer p{
+    width: 100%;
+    font-weight: 600;
+    color: var(--rose500);
+}
+
+.imgContainer img{
+    width: 150px;
+}
 
 
-    footer{
-        white-space: nowrap;
-        display: flex;
-        align-items: center;
-        height: 45px;
-        padding: 0 50px;
-        position: relative;
-        bottom: 0px;
-        font-size: 11px;
-        text-align: center;
-        color: hsl(228, 45%, 44%);
-    }
+footer{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 0 50px;
+    position: relative;
+    bottom: 0px;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
 }
 
 @media(min-width: 769px){
+
     .mainContainer{
-        border: 1px solid blue;
+        display: flex;
+        flex-direction: row;
+        padding: 4rem;
+        align-items: flex-start;
+    }
+
+    .dessertMenu{
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 400px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+    }
+
+    .menuContainer {
+        gap: 1.5rem;
+        overflow: hidden;
+        margin-right: 450px;
+    }
+
+    .title{
+        width: 100%;
+        grid-column: 1 / -1;
+        padding: 0 10px;
+    }
+
+    .dessertContainer{
+
+    }
+
+    .dessertContent{
+
+    }
+
+    .cartContainer{
+        width: 500px;
+        height: 100%;
+        top: 4rem;
+        position: fixed;
+        margin-top: 4rem;
+        top: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .cart{
+        margin: 0;
+        width: 400px;
+    }
+
+    footer{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer p{
+        width: auto;
+
     }
 } 
