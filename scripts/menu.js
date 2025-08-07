@@ -14,14 +14,13 @@ const menuItems = [
 
 function renderMenu(items) {
   dessertMenu.innerHTML = items.map(item => `
-    <div class="dessertContainer">
+    <div class="dessertContainer" data-id="${item.id}">
       <div class="dessertContent">
         <img src="${item.img}" alt="${item.item}">
       </div>
       <div class="buttonContainer">
-        <button class="addToCartButton" data-id="${item.id}">
-          <img src="/assets/images/icon-add-to-cart.svg"/>
-          Add to Cart
+        <button class="addRemoveItem" data-id="${item.id}">
+          <img src="/assets/images/icon-add-to-cart.svg"/> Add to Cart
         </button>
       </div>
       <div class="itemContainer">
@@ -33,5 +32,24 @@ function renderMenu(items) {
   `).join('');
 }
 
-// renderiza na tela
+document.addEventListener('click', event => {
+  const button = event.target.closest('.addRemoveItem');
+  if (button) {
+    const itemId = button.dataset.id;
+    const parent = button.closest('.buttonContainer');
+
+    parent.innerHTML = `
+      <div class="addRemoveContainer active">
+        <button class="decrementButton" data-id="${itemId}">
+          <img src="/assets/images/icon-decrement-quantity.svg"/>
+        </button>
+        <span class="quantityValue" data-id="${itemId}">0</span>
+        <button class="incrementButton" data-id="${itemId}">
+          <img src="/assets/images/icon-increment-quantity.svg"/>
+        </button>
+      </div>
+    `;
+  }
+});
+
 renderMenu(menuItems);
